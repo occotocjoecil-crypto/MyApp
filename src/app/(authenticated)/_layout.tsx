@@ -1,14 +1,6 @@
 import { Stack } from "expo-router";
+import React from "react";
 
-export default function DefaultLayout() {
-  return (
-    <Stack>
-      <Stack.Screen name="(tabs)" options={{
-        headerShown: false
-      }} />
-      <Stack.Screen name="posts/create" options={{
-        headerTitle: "Create Post"
-      }} />
-    </Stack>
-  )
+export default function AuthenticatedLayout() {
+  return React.createElement(Stack, { screenOptions: { headerShown: false } });
 }
